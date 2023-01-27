@@ -1,0 +1,15 @@
+[{
+  "model": "myapp.proprietar",
+  "fields": {
+    "nume": "Ion"
+  }
+}, {
+  "model": "myapp.animal",
+  "fields": {
+    "nume": "Rex",
+    "varsta": "2",
+    "specie": "caine",
+    "proprietar": "1"
+  }
+}
+]
