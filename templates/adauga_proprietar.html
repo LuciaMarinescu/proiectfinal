@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <style>
+        button {
+            background-color: rgba(0,0,0,0.1);
+            display: block;
+            text-align: center;
+            border-radius: 20px;
+            margin-left: 105px;
+            height: 30px;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body style="background: #0d0d0d">
+    <div class = "container">
+        <button style="display:block; margin: 10px 10px; border-radius: 10px; cursor:pointer;"><a href="{% url 'homepage' %}"><i class="fa fa-arrow-left" style="color:#b3e6ff;"></i></a></button>
+        <form method="POST" style="background-color: #80d4ff; width: 300px; height: 200px; text-align: center; margin-top: 25vh; margin-left: 40vw; border-radius: 10px; box-shadow: 5px 5px 20px #4d4d4d; z-index: 9999;">
+            <fieldset style="border:none;">
+                <legend style="font-size: 20px; font-weight:bold; padding-top: 40px;">Adaugă un proprietar</legend>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary" style="border-radius: 10px; cursor:pointer;">Adaugă</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

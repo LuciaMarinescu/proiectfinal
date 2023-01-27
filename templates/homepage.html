@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="background: linear-gradient(90deg, hsl(0, 0%, 10%), hsl(0, 0%, 30%), hsl(0, 0%, 10%));">
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <title>PythonVet</title>
+    <style>
+        button {
+            background-color: rgba(0,0,0,0.1);
+            display: block;
+            margin: 20px 130px;
+            text-align: center;
+            border-radius: 20px;
+            height: 30px;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body id="top">
+    <section class="wrapper" style="text-align: center;">
+            <a class="logo" style="font-size: 25px; color:#b3e6ff; margin-left: -80vw;" href="{% url 'homepage' %}">
+                <i class="fa fa-dragon"></i>
+                PythonVet
+            </a>
+         <div class="center-row" style="border-radius: 10px; background-color: #80d4ff; margin-top: 20vh; margin-left: 30vw; width:500px; height: 300px; box-shadow: 5px 5px 20px #808080; z-index: 9999;">
+            <h1 style="padding-top: 30px;">Bun venit la PythonVet!</h1>
+            <ul>
+                <button style="margin-left: 137px;"><a href="{% url 'formanimal' %}" style="color: black;">Adaugă un animal<i class="fas fa-dog" style="margin-left: 5px;"></i></a></button>
+                <button><a href="{% url 'formproprietar' %}" style="color: black;">Adaugă un proprietar<i class="fa fa-user" style="margin-left: 5px;"></i></a></button>
+                <button style="margin-left: 137px;"><a href="{% url 'afiseazaanimale' %}" style="color: black;">Afișează animalele<i class="fa fa-file" style="margin-left: 5px;"></i></a></button>
+                <button style="margin-left: 135px;"><a href="{% url 'afiseazaproprietari' %}" style="color: black;">Afișează proprietarii<i class="fa fa-file" style="margin-left: 5px;"></i></a></button>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
